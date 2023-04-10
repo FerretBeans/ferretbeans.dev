@@ -1,0 +1,69 @@
+.madeby {
+    color: black;
+    opacity: 0.25;
+}
+
+.pfp{
+    clip-path: circle();
+    width: 160px;
+    height: auto;
+    animation: fadeIn 3s;
+    animation-name: spinning;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+.card {
+    border-style: solid;
+    border-color: rgb(235,235,235);
+    background-color: rgb(228,228,228);
+    width: 450px;
+    height: 700px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.title, .unsure, .unsure1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.unsure, .unsure1 {
+    font-size: 16px;
+}
+
+.twitterbutton {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
+
+.tbutton {
+    width: 32px;
+    height: 32px;
+}
+
+body {
+    background-color: pink;
+}
+
+.SubHeading {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
