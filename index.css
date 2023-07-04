@@ -1,11 +1,17 @@
 body, html {
-    background-color: #00ff7b;
+    background-color: #d6ecf3;
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    font-weight: bold;
 }
 
-.header {
-    
+#heading-text {
+    font-family: '';
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
 }
