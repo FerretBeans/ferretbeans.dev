@@ -1,20 +1,56 @@
-body, html {
+body, html, .header {
     background-color: #d6ecf3;
     vertical-align: baseline;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-iframe {
-    position: relative;
-    margin: auto;
-    display: block
+#heading-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border: 5px;
 }
 
-#mainiframe {
-    top: 50px;
+#socials {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 5px;
+    margin: 5px;
+    padding: 5px;
+    border: 5px;
+    text-align: center;
+    width: 250px;
 }
+
+#socialalign {
+    display: block;
+}
+
+#social1:link, #social2:link, #social3:link, #social4:link, #social1, #social2, #social3, #social4 {
+    color: #9d00ff;
+}
+
+#social1:hover {
+    animation: underline1 1s infinite;
+}
+
+#social2:hover {
+    animation: underline2 1s infinite;
+}
+
+#social3:hover {
+    animation: underline3 1s infinite;
+}
+
+#social4:hover {
+    animation: underline4 1s infinite;
+}
+
+@keyframes underline1 {from {text-decoration: solid;}to {text-decoration: none;}} @keyframes underline2 {from {text-decoration: solid;}to {text-decoration: none;}} @keyframes underline3 {from {text-decoration: solid;}to {text-decoration: none;}} @keyframes underline4 {from {text-decoration: solid;}to {text-decoration: none;}}
 
 ::-webkit-scrollbar {
     background: transparent;
