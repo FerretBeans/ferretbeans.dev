@@ -1,4 +1,8 @@
 /* this gets used once the js switches from index.css to about.css*/
 body {
     background-color: #d6ecf3;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
