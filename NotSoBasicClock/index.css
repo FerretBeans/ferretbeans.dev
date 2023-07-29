@@ -1,0 +1,24 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#dd {
+    font-size: 64px;
+}
+
+#date {
+    font-size: 64px;
+}
+
+#time {
+    font-size: 64px;
+}
+
+#flex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

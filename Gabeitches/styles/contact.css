@@ -1,0 +1,4 @@
+.weblink:active, .weblink:hover, .weblink:visited, .weblink:link {
+    color: white;
+    background-color: transparent;
+  }

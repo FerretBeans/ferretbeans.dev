@@ -1,0 +1,33 @@
+body, html {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+  border: 5px;
+}
+
+.links {
+  float: right;
+  word-spacing: 10px;
+}
+
+.link:active, .link:hover, .link:visited, .link:link {
+  color: fuchsia;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.text {
+  color: white;
+}
+
+.github {
+  color: white;
+}
+
+.copyright {
+  position: fixed;     
+  text-align: center;    
+  bottom: 5px;
+  width: 100%; 
+}

@@ -1,0 +1,17 @@
+.game {
+    color: fuchsia;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.text {
+    font-weight: bold;
+}
+
+.randomgame {
+    color: fuchsia;
+    text-decoration: none;
+}
