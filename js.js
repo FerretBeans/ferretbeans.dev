@@ -24,5 +24,5 @@ function projects() {
     document.getElementsByTagName("link")[0].href = "projects.css";
     document.getElementsByTagName("body")[0].innerHTML = '';
 
-    document.getElementsByTagName("body")[0].innerHTML = "<div id='header'><center><h1 id='heading'>My Projects</h1></center><center><button id='button' onclick='home()'>Home</button></center></div><div id='text'><p>Here are my projects :D</p><ul id='list'><li><span><a href='BasicClock/index.html'>A Very Basic Clock</a></span></li><li><span><a href='NotSoBasicClock/index.html'>A Lesser Basic Clock</a></span></li><li><span><a href='IPBasedClock/index.html'>An Ip Based Clock</a></span></li><li><span><a href='Gabeitches/index.html'>Gabeitches.com - A Game Website</a></span></li></ul></div>";
+    document.getElementsByTagName("body")[0].innerHTML = "<div id='header'><center><h1 id='heading'>My Projects</h1></center><center><button id='button' onclick='home()'>Home</button></center></div><div id='text'><p>Here are my projects :D</p><ul id='list'><li><span><a href='#'>A Very Basic Clock</a></span></li><li><span><a href='#'>A Lesser Basic Clock</a></span></li><li><span><a href='#'>An Ip Based Clock</a></span></li><li><span><a href='#'>Gabeitches.com - A Game Website</a></span></li></ul></div>";
 }
