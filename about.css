@@ -1,7 +1,6 @@
-/* this gets used once the js switches from index.css to about.css*/
-body {
+body, html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #d6ecf3;
+    background: linear-gradient(90deg, #9898FF, #d6ecf3);
     font-size: 18px;
     font-weight: bold;
     height: 100%;
@@ -43,4 +42,19 @@ body {
 span {
     color: white;
     font-size: 18px;
+}
+
+#button1:link, #button1 {
+    color: #9d00ff;
+}
+
+#button1:hover {
+    animation: underline1 1s infinite;
+}
+
+@keyframes underline1 {
+    from {text-decoration: solid;
+    }
+    to {text-decoration: none;
+    }
 }
