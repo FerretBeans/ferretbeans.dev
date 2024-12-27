@@ -1,13 +1,11 @@
-const socket = io('http://localhost:621');
+//literally just to get my discord pfp
+//MTMyMjA3MDk5NTQ2NDQ5MTAxOA.GqDfF5.y6wWlgOeuYiL2q6Kg-A99b4k0Pe2yIUVHM3EIE
 
-socket.on('connect', () => {
-    console.log('Connected to the server');
-});
-
-socket.on('message', (url) => {
-    const avr = url.includes('http') ? url : null;
-
-    if (url) {
-        document.getElementById('img').setAttribute('src', url)
-    }
-});
+function pfp() {
+    fetch("https://discord.com/api/v10/users/938014927262711819", {
+        method: "GET",
+        headers: [
+            "Authorization: Bot MTMyMjA3MDk5NTQ2NDQ5MTAxOA.GqDfF5.y6wWlgOeuYiL2q6Kg-A99b4k0Pe2yIUVHM3EIE"
+        ]
+    })
+}
