@@ -7,7 +7,8 @@ function pfp() {
         mode: "cors",
         credentials: "same-origin",
         headers: {
-            "Authorization": "Bot MTMyMjA3MDk5NTQ2NDQ5MTAxOA.GqDfF5.y6wWlgOeuYiL2q6Kg-A99b4k0Pe2yIUVHM3EIE"
+            "Authorization": "MTMyMjA3MDk5NTQ2NDQ5MTAxOA.GqDfF5.y6wWlgOeuYiL2q6Kg-A99b4k0Pe2yIUVHM3EIE",
+            "Authorization": "Bot"
         }
     })
     .then(res => res.json())
