@@ -5,10 +5,14 @@ function pfp() {
     const b = "GzJAwx.";
     const c = "9VwKOCtRhGcOiNOJ0o2_MXjeFmr_z3wGh4lLgw";
 
-    fetch("https://api.allorigins.win/get?url=https://discord.com/api/v10/users/870628551823609926", {
+    const corsProxy = "https://api.allorigins.win/get?url=";
+
+    fetch(corsProxy + encodeURIComponent("https://discord.com/api/v10/users/870628551823609926"), {
         method: "GET",
         headers: {
-            "Authorization": `Bot ${a + b + c}`
+            "Authorization": `Bot ${a + b + c}`,
+            "Origin": window.location.origin,
+            "X-Requested-With": "XMLHttpRequest"
         }
     })
     .then(res => res.json())
