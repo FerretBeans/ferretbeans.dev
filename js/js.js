@@ -1,12 +1,16 @@
 //literally just to get my discord pfp
 
 function pfp() {
-    fetch("https://discord.com/api/v10/users/938014927262711819", {
+    const a = "MTE1MDA1NzcxMzY2MTkwNzAwNw.";
+    const b = "GzJAwx.";
+    const c = "9VwKOCtRhGcOiNOJ0o2_MXjeFmr_z3wGh4lLgw";
+
+    fetch("https://discord.com/api/v10/users/870628551823609926", {
         method: "GET",
         mode: "cors",
         credentials: "include",
         headers: {
-            "Authorization": "MTMyMjA3MDk5NTQ2NDQ5MTAxOA.G_3uP4.jyIp-t7ku3L_BDbteju8YCJwmn2xhec0c4af_M",
+            "Authorization": a + b + c,
             "Authorization": "Bot"
         }
     })
@@ -15,3 +19,4 @@ function pfp() {
 }
 
 pfp();
+
