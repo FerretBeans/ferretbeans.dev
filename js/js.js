@@ -5,9 +5,9 @@ function pfp() {
     const b = "GzJAwx.";
     const c = "9VwKOCtRhGcOiNOJ0o2_MXjeFmr_z3wGh4lLgw";
 
-    const corsProxy = "https://api.allorigins.win/get?url=";
+    const corsProxy = "https://thingproxy.freeboard.io/fetch/";
 
-    fetch(corsProxy + encodeURIComponent("https://discord.com/api/v10/users/870628551823609926"), {
+    fetch(corsProxy + "https://discord.com/api/v10/users/870628551823609926", {
         method: "GET",
         headers: {
             "Authorization": `Bot ${a + b + c}`,
