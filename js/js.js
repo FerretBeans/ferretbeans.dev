@@ -10,8 +10,7 @@ function pfp() {
         mode: "cors",
         credentials: "include",
         headers: {
-            "Authorization": a + b + c,
-            "Authorization": "Bot"
+            "Authorization": `Bot ${a + b + c}`
         }
     })
     .then(res => res.json())
@@ -19,4 +18,3 @@ function pfp() {
 }
 
 pfp();
-
