@@ -5,14 +5,10 @@ function pfp() {
     const b = "GzJAwx.";
     const c = "9VwKOCtRhGcOiNOJ0o2_MXjeFmr_z3wGh4lLgw";
 
-    const corsProxy = "https://thingproxy.freeboard.io/fetch/";
-
-    fetch(corsProxy + "https://discord.com/api/v10/users/870628551823609926", {
+    fetch("https://discord.com/api/v10/users/870628551823609926", {
         method: "GET",
         headers: {
-            "Authorization": `Bot ${a + b + c}`,
-            "Origin": window.location.origin,
-            "X-Requested-With": "XMLHttpRequest"
+            "Authorization": `Bot ${a + b + c}`
         }
     })
     .then(res => res.json())
