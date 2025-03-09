@@ -39,8 +39,4 @@ editted a little to make faster but still go show love <3
     })();
 })();
 
-if (window.location.pathname.endsWith('.html')) {
-    window.location.pathname = window.location.pathname.replace('.html', '');
-  }
-
 pfp();
