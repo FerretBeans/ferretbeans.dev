@@ -1,6 +1,6 @@
 body, html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(90deg, #9898FF, #d6ecf3);
+    background: black;
     font-size: 18px;
     font-weight: bold;
     height: 100%;
@@ -11,8 +11,15 @@ body, html {
     justify-content: center;
 }
 
+#border {
+    display: flex;
+    border: 2px solid white;
+    padding: 25px;
+    border-radius: 1%;
+    background: repeating-linear-gradient(-45deg,rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 10px, transparent 10px, transparent 20px);
+}
+
 #button {
-    background-color: transparent;
     border: 0;
     color: #9d00ff;
     font-size: 16px;
@@ -38,45 +45,31 @@ body, html {
     width: 250px;
 }
 
-#socialalign, #buttons {
+#socialalign, #button {
     display: block;
 }
 
-#social1:link, #social2:link, #social3:link, #social4:link, #social1, #social2, #social3, #social4, #button1:link, #button2:link, #button2, #button1 {
+#social:link, #social, #buttons:link, #buttons {
     color: #9d00ff;
 }
 
-#social1:hover {
-    animation: underline1 1s infinite;
+#social:hover {
+    animation: underline 1s infinite;
 }
 
-#social2:hover {
-    animation: underline2 1s infinite;
-}
-
-#social3:hover {
-    animation: underline3 1s infinite;
-}
-
-#social4:hover {
-    animation: underline4 1s infinite;
-}
-
-#button1:hover {
-    animation: underline5 1s infinite;
-}
-
-#button2:hover {
-    animation: underline6 1s infinite;
+#buttons:hover {
+    animation: underline 1s infinite;
 }
 
 #pfp {
-    clip-path: circle();
     width: 128px;
-    height: auto;
+    height: 128px;
+    border-radius: 10%;
+    border: 2px solid white;
+    overflow: hidden;
 }
 
-@keyframes underline1 {
+@keyframes underline {
     from {
         text-decoration: solid;
     }
@@ -84,48 +77,6 @@ body, html {
         text-decoration: none;
     }
 } 
-
-@keyframes underline2 {
-    from {text-decoration: solid;
-    }
-    to {text-decoration: none;
-    }
-} 
-
-@keyframes underline3 {
-    from {
-        text-decoration: solid;
-    }
-    to {text-decoration: none;
-    }
-} 
-
-@keyframes underline4 {
-    from {
-        text-decoration: solid;
-    }
-    to {
-        text-decoration: none;
-    }
-}
-
-@keyframes underline5 {
-    from {
-        text-decoration: solid;
-    }
-    to {
-        text-decoration: none;
-    }
-}
-
-@keyframes underline6 {
-    from {
-        text-decoration: solid;
-    }
-    to {
-        text-decoration: none;
-    }
-}
 
 ::-webkit-scrollbar {
     background: transparent;

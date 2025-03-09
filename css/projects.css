@@ -1,7 +1,7 @@
 /* this gets used once the js switches from index.css to about.css*/
 body, html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(90deg, #9898FF, #d6ecf3);
+    background: black;
     font-size: 18px;
     font-weight: bold;
     height: 100%;
@@ -14,7 +14,7 @@ body, html {
 }
 
 #header {
-    border-bottom-color: rgb(49, 49, 49);
+    border-bottom-color: rgb(177, 177, 177);
     border-bottom-style: solid;
     border-bottom-width: 3px;
 }
