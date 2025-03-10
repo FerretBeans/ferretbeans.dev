@@ -10,9 +10,15 @@ body, html {
     position: fixed;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+
+#main {
+    position: fixed;
 }
 
 #border {
+    position: relative;
     display: flex;
     border: 5px solid white;
     padding: 25px;
@@ -68,6 +74,14 @@ body, html {
     border-radius: 10%;
     border: 2px solid white;
     overflow: hidden;
+}
+
+#bording {
+    position: absolute;
+}
+
+#marqueeborder {
+
 }
 
 @keyframes underline {

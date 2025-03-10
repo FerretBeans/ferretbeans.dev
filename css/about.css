@@ -1,6 +1,6 @@
 body, html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: black;
+    background-image: url("../gifs/starstwinkle.gif");
     font-size: 18px;
     font-weight: bold;
     height: 100%;
@@ -33,7 +33,7 @@ body, html {
 }
 
 #list {
-    color: black
+    color: white;
 }
 
 #button {
