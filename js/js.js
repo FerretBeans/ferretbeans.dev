@@ -12,6 +12,7 @@ function pfp() {
       var meow = document.getElementById("img");
       meow.src = `https://imglabs.io/?id=e45bddda-fe92-49eb-90aa-1eb2a6070237&url=https://cdn.discordapp.com/avatars/870628551823609926/${data.avatar}.png`;
   })
+}
 
 /*
 TAKEN FROM https://codepen.io/rileyjshaw/pen/vExWpe !!!!!
