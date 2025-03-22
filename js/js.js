@@ -1,21 +1,11 @@
 //literally just to get my discord pfp
-//changing to imglabs bcs like discord is banned in some places
 function pfp() {
-  fetch("https://cors-anywhere.herokuapp.com/https://discord.com/api/v10/users/870628551823609926", {
-      method: 'GET',
-      headers: {
-          'Referer': 'https://imglabs.io',
-          'User-Agent': 'Mozilla/5.0',
-      }
-  })
-  .then(response => response.json())
-  .then(data => {
-      var meow = document.getElementById("img");
-      meow.src = `https://imglabs.io/?id=e45bddda-fe92-49eb-90aa-1eb2a6070237&url=https://cdn.discordapp.com/avatars/870628551823609926/${data.avatar}.png`;
-  })
-  .catch(error => {
-      console.error('Error fetching avatar:', error);
-  });
+    fetch("https://cors-dun.vercel.app/discord?userId=870628551823609926")
+    .then(response => response.json())
+    .then(data => {
+        var meow = document.getElementById("img");
+        meow.src = `https://cdn.discordapp.com/avatars/870628551823609926/${data.avatar}.png`
+    });
 }
 
 /*
