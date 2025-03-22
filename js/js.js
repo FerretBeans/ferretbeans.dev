@@ -1,18 +1,15 @@
-//VARIABLES!!!!!! >w<
-
-
 //literally just to get my discord pfp
+//changing to imglabs bcs like discord is banned in some places
 function pfp() {
     fetch("https://cors-dun.vercel.app/discord?userId=870628551823609926")
     .then(response => response.json())
     .then(data => {
         var meow = document.getElementById("img");
-        meow.src = `https://cdn.discordapp.com/avatars/870628551823609926/${data.avatar}.png`
+        meow.src = `https://imglabs.io/?id=e45bddda-fe92-49eb-90aa-1eb2a6070237&url=https://cdn.discordapp.com/avatars/870628551823609926/${data.avatar}.png`
     });
 }
 
 /*
-im adding a way for my name to be rainbow :3
 TAKEN FROM https://codepen.io/rileyjshaw/pen/vExWpe !!!!!
 editted a little to make faster but still go show love <3
 */ 
