@@ -35,4 +35,34 @@ editted a little to make faster but still go show love <3
     })();
 })();
 
+function idkuwu() {
+const UwU = new URLSearchParams({ 
+        method: "user.getrecenttracks",
+        user: "ferretbeans",
+        limit: "1",
+        api_key: "cc71d4aea47a8cf9402dc4579022cfba",
+        format: "json"
+    });
+
+fetch("https://ws.audioscrobbler.com/2.0/?" + UwU.toString())
+    .then(res => res.json())
+    .then(data => {
+        const moosic = data.recenttracks.track;
+        if (moosic && moosic.length > 0) {
+            const song = moosic[0];
+            const title = song.name;
+            const maker = song.artist['#text'];
+
+            const mrow = document.getElementById("musicuwu");
+            mrow.innerHTML = title + " - " + maker;
+        } else {
+            mrow.innerHTML = "I'm Not currently listening to music"
+        }
+    })
+}
+setInterval(() => {
+    idkuwu();
+}, 250);
+
+idkuwu();
 pfp();

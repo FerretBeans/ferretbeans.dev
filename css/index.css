@@ -96,3 +96,12 @@ body, html {
 ::-webkit-scrollbar {
     background: transparent;
 }
+
+#musicuwu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
