@@ -82,7 +82,7 @@ body, html {
 
 @keyframes underline {
     from {
-        text-decoration: solid;
+        text-decoration: underline solid;
     }
     to {
         text-decoration: none;
