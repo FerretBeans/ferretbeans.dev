@@ -80,10 +80,6 @@ body, html {
     position: absolute;
 }
 
-#marqueeborder {
-
-}
-
 @keyframes underline {
     from {
         text-decoration: solid;
