@@ -35,8 +35,10 @@ editted a little to make faster but still go show love <3
     })();
 })();
 
+let miau = "";
+
 function idkuwu() {
-const UwU = new URLSearchParams({ 
+    const UwU = new URLSearchParams({ 
         method: "user.getrecenttracks",
         user: "ferretbeans",
         limit: "1",
@@ -44,22 +46,28 @@ const UwU = new URLSearchParams({
         format: "json"
     });
 
-fetch("https://ws.audioscrobbler.com/2.0/?" + UwU.toString())
-    .then(res => res.json())
-    .then(data => {
-        const moosic = data.recenttracks.track;
-        if (moosic && moosic.length > 0) {
-            const song = moosic[0];
-            const title = song.name;
-            const maker = song.artist['#text'];
+    fetch("https://ws.audioscrobbler.com/2.0/?" + UwU.toString())
+        .then(res => res.json())
+        .then(data => {
+            let moosic = data.recenttracks.track;
+            if (moosic && moosic.length > 0) {
+                let song = moosic[0];
+                let title = song.name;
+                let maker = song.artist['#text'];
 
-            const mrow = document.getElementById("musicuwu");
-            mrow.innerHTML = title + " - " + maker;
-        } else {
-            mrow.innerHTML = "I'm Not currently listening to music"
-        }
-    })
+                let woaw = title + " - " + maker;
+                if (woaw !== miau) {
+                    const mrow = document.getElementById("musicuwu");
+                    mrow.innerHTML = woaw;
+                    miau = woaw;
+                }
+            } else {
+                const mrow = document.getElementById("musicuwu");
+                mrow.innerHTML = "I'm Not currently listening to music";
+            }
+        });
 }
+
 setInterval(() => {
     idkuwu();
 }, 250);

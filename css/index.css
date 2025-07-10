@@ -44,23 +44,24 @@ body, html {
     border: 5px;
 }
 
-#socials {
+#sillies {
     word-spacing: 5px;
     margin: 5px;
     padding: 5px;
     border: 5px;
     width: 250px;
+    display: block !important;
 }
 
-#socialalign, #button {
+#silliesalign, #button {
     display: block;
 }
 
-#social:link, #social, #buttons:link, #buttons {
+#silli:link, #silli, #buttons:link, #buttons {
     color: #9d00ff;
 }
 
-#social:hover {
+#silli:hover {
     animation: underline 1s infinite;
 }
 
